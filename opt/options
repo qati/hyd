@@ -1,0 +1,122 @@
+/**
+ * kappa.
+ */
+kappa = 0.5
+
+/**
+ * Viscosity
+ * hbar = 197 MeV * fm / c
+ * hbar/4pi = 15.6
+ */
+visc_u1 = 0
+visc_u2 = 0 
+
+
+/**
+ * Spacetime resolution.
+ */
+dt = 0.00001   //used only by first step
+dx = 0.5
+dy = 0.5
+
+
+/**
+ * Start time.
+ */
+t0 = 0
+
+
+/**
+ * Borders.
+ */
+x1 = -20 //fm
+x2 =  20
+y1 = -20
+y2 = 20
+
+
+/**
+ * CALCULATION TIME.
+ */
+RTT = 10     // fm/c
+
+
+/**
+ * Number of points to be written to file.
+ */
+NOPTBW = 100  // fm/c
+
+/**
+ * Writing step: console and dt file.
+ */
+WS = 1
+
+/**
+ * Woods-Saxon distribution.
+ */
+WS_R = 3.75
+WS_a = 0.5
+
+/**
+ * Initial values.
+ */
+X0   = 5      // fm
+Y0   = 6       // fm
+V0   = 7       // c
+W0   = 7       // c
+rho0 = 6  // MeV/c^2/fm^3 5-6 kvark
+n0   = 6     //1/fm^3 
+p0   = 2000  // MeV/fm^3      In symmmetric case p0=rho0*X0^2/2
+
+/**
+ * Integral radius.
+ */
+int_rad = 0.12
+
+
+R   = 4
+E2  = 0.3
+E3  = 0.15
+E4  = 0.1
+
+p_s_corr = 1
+
+
+psi2 = 0
+psi3 = 0
+psi4 = 0
+
+
+/**
+ * Measurable quantities calculation settings.
+ */
+LAST_V_ID = 4
+pt1 = 0
+pt2 = 2000
+fi1 = 0
+fi2 = 6.28318530718
+dpt = 10
+dfi = 0.1
+
+/**
+ * Particle mass.
+ */
+m = 139.570 //MeV Pi+-
+
+/**
+ * Hadronization temperature.
+     */
+T0 = 1 //MeV
+
+
+
+/**
+ * Options for data process script!
+ * @maximum of v
+ * @number of countur lines in v animation
+ * @maximum length of vectors
+ */
+max_v             = 6
+max_v_vec         = 2
+num_of_cont_lines = 8
+eps_v_t1            = -1

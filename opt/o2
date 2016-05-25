@@ -1,0 +1,4 @@
+rho0 = 10
+p0 = 125
+visc_u1 = 1
+kappa = 1
